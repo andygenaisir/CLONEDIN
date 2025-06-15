@@ -54,6 +54,10 @@
     margin: 0.5rem;
 }
 
+.items-container a{
+    text-decoration: none;
+}
+
 .login-btn button{
     margin-left: 10px;
     width: 13px;
@@ -63,6 +67,14 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
+}
+
+.login-btn button {
+    background-image: url(../assets/profile.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 13px ;
 }
 
 .login-btn button p{

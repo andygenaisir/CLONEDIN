@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #eeeee4;
+    background-color: #f4f4ec;
 }
 
 .nav-bar{
@@ -28,6 +28,10 @@ body{
     margin-right: 0.4rem;
 }
 
+.logo:hover{
+    background-color: rgb(167, 109, 0);
+}
+
 .logo a{
     color: #ffff;
     justify-content: center;
@@ -47,7 +51,7 @@ body{
 
 .bi-search{
     position: absolute;
-    left: 128px;
+    left: 175px;
     transform: translateY(90%);
     width: 8px;
     height: 8px;
@@ -68,7 +72,6 @@ body{
 
 .items-container ul li{
     list-style: none;
-    padding: 20px;
     margin: 0.8rem;
 }
 
@@ -118,11 +121,230 @@ body{
     cursor: pointer;
     filter: invert(100%);
 }
-.about{
-    background-color: #eeeee4;
+
+.banner{
+    width: 750px;
+    height: 190px;
 }
 
-.about img{
-    width: 50px;
-    height: 50px;
+.banner img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 8px 0 0;
+    background-size: cover;
+    background-position: top;
+}
+
+.edit-banner{
+    display: flex;
+    justify-content: center;
+    width: 11px;
+    height: 11px;
+    background-color: #fff;
+    color: orange;
+    border: 1px solid rgba(199, 198, 198, 0.653);
+    border-radius: 50px;
+    padding: 11px ;
+    position: absolute;
+    z-index: 2;
+    left: 765px;
+    top: 104px;
+    cursor: pointer;
+}
+
+.edit-banner i{
+    align-self: center;
+    font-size: 14.5px;
+}
+
+.edit-banner i:hover{
+    color: rgb(210, 142, 16);
+}
+
+.about-card{
+    border: 1px solid rgba(199, 198, 198, 0.653);
+    border-radius: 10px;
+    width: 750px;
+    height:400px;
+    margin: 25px 70px;
+    background-color:#ffff;
+    z-index: 0;
+}
+
+.about-img img{
+    border: 4px solid #ffff;
+    border-radius: 90px;
+    margin: 35px 25px;
+    width: 150px;
+    height: 150px;
+    z-index: 1;
+    position: absolute;
+    top: 125px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.bi-pencil{
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 300;
+    width: 11px;
+    height: 11px;
+    padding: 14px;
+    margin: 4px;
+    left: 762px;
+    position: absolute;
+}
+
+.bi-pencil:hover{
+    background-color:rgba(227, 227, 227, 0.418);
+}
+
+.about-img img:hover{
+    filter: contrast(200%);
+}
+
+.description{
+    padding: 50px 0 10px 30px;
+    display: grid;
+    grid-template-columns: 6fr 3fr;
+}
+
+.description-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.name{
+    font-size: 26px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.name:hover{
+    background-color: rgba(227, 227, 227, 0.418);
+    border-radius: 10px;
+}
+
+.name-box{
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.title{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 1px 0;
+}
+
+.info {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 4px 0;
+    color: orange;
+    cursor: pointer;
+}
+
+span{
+    padding: 0 5px 5px 5px ;
+}
+
+.verification-insigne{
+    width: 210px;
+    border-radius: 50px;
+    background-color: #fff;
+    border: 1px dashed orange;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.bi-patch-check{
+    color: orange;
+    font-weight: 500;
+}
+
+.verification-insigne:hover, .verification-insigne i:hover{
+    color:rgb(151, 101, 7);
+    border-color: rgb(151, 101, 7);
+    background-color: rgb(245, 217, 164);
+}
+
+.location{
+    margin: 4px 0;
+    color:rgb(116, 116, 116);
+    font-size: 14px;
+}
+
+.current-work-studies{
+    margin: 0 5px;
+    padding: 0 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.current-work-studies img{
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.current-box{
+    display: flex;
+    flex-direction: row;
+    margin: 0 5px 5px 5px;
+}
+
+.current-box p{
+    align-self: center;
+    margin: 0 6px 6px 6px;
+    padding: 0 4px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.current-box p:hover, .info:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+.about-btns{
+    padding-left: 30px;
+}
+
+.about-btns button{
+    margin: 0 5px 0 0;
+    padding: 6px 8px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.interest{
+    border: none;
+    border: 2px solid orange;
+    background-color: orange;
+    color: #fff;
+}
+
+.add{
+    background-color:#fff;
+    border: 2px solid orange;
+    color: orange;
+}
+
+.interest:hover{
+    border-color:rgb(151, 101, 7) ;
+    background-color: rgb(151, 101, 7);
+}
+
+.add:hover {
+    background-color:  rgb(245, 217, 164);
+    border: 2px solid rgb(151, 101, 7);
+    color: rgb(151, 101, 7);
 }
